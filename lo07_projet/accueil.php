@@ -7,8 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>ACCUEIL</title>
-        <!--coucou-->
+        <title>Accueil | Les Bambins</title>
     </head>
     <body>
         <p>
