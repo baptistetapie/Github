@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
         <title>INSCRIPTION</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+             div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+             }  
+               
+        </style>
     </head>
     <body>
-        <h1> Formulaire d'ajout d'une nounou </h1>
+        <h1> Formulaire d'inscription nounou </h1>
         
         <form  method="post" action="apres_soumission_nounou.php">
+            <div>
             <p>
-                <label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" />
+                <label for="prenom">Prénom</label> : <input type="text" name="prenom" id="prenom" placeholder="Votre nom..."/>
             </p>
             
             <p>
-                <label for="nom">Nom</label> : <input type="text" name="nom" id="nom"  />
+                <label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Votre prénom..." />
             </p>
             
             <p>
@@ -48,7 +53,7 @@ and open the template in the editor.
                 <input type="file" name="monfichier" /><br />
                 
             </p>
-             
+           </div>  
         </form>
         
     </body>
