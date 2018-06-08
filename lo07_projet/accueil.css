@@ -1,0 +1,106 @@
+            .header { 
+                display: block;
+            }
+            .footer { 
+                display: block;
+            }
+            a#cRetour{
+                border-radius:3px;
+                padding:10px;
+                font-size:15px;
+                text-align:center;
+                color:#fff;
+                background:rgba(0, 0, 0, 0.25);
+                position:fixed;
+                right:20px;
+                opacity:1;
+                z-index:99999;
+                transition:all ease-in 0.2s;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                text-decoration: none;
+            }
+            a#cRetour:before{ 
+                content: "\25b2";
+            }
+            a#cRetour:hover{
+                background:rgba(0, 0, 0, 1);
+                transition:all ease-in 0.2s;
+            }
+            a#cRetour.cInvisible{
+                bottom:-35px;
+                opacity:0;
+                transition:all ease-in 0.5s;
+            }
+
+            a#cRetour.cVisible{
+                bottom:20px;
+                opacity:1;
+            }
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+
+            .header {
+                padding: 60px;
+                text-align: center;
+                background: #ffffcc;
+                color: #660000;
+            }
+
+            .navbar {
+                display: flex;
+                background-color: #333;
+            }
+
+            .navbar a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .row {  
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .side {
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+            }
+
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+            }
+
+            .fakeimg {
+                background-color: #aaa;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background:#f2ffcc;
+            }
+
+            @media screen and (max-width: 700px) {
+                .row, .navbar {   
+                    flex-direction: column;
+                }
+            }
