@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Inscription parents | Les Bambins</title>
     </head>
     <body>
         Bonjour parents
