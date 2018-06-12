@@ -8,72 +8,61 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Inscription parents | Les Bambins</title>
-        <style>
-            div {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 20px;
-            }
-            input[type=submit] {
-                width: 100%;
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
-
-            input[type=submit]:hover {
-                background-color: #45a049;
-            }
-        </style>
+        <link rel="stylesheet" href="formulaire_parent.css" />
+            
     </head>
     <body>
-        <div>
-        <h1>Formulaire d'inscription des parents</h1>
+        <a name="haut" id="haut"></a>
+        
+        <header>
+        <nav id="nav"> 
+           <ul> <li><a href="accueil.php" title="Les Bambins"><img src="https://naitreetgrandir.com/DocumentsNG/Fiches/images/bg-naitre-grandir-bienfaits-dessin-3-a-5-ans-1.Jpeg" alt="logo" width="100px"></a></li>
+               <li> <h2>FORMULAIRE D'INSCRIPTION DES PARENTS</h2></li>
+           </ul>
+       </nav>
+        </header>
+      
         <form name="ajout_parent" method='post' action='apres_soumission_parent.php' >
-            
+        <div>    
             <p>
-                <label for="prenom">PrÃ©nom</label> : <input type="text" name="prenom" id="prenom" placeholder="Votre prénom..." required/>
+                <label for="prenom">PrÃ©nom :</label><input type="text" name="prenom" id="prenom" placeholder="Votre prénom..." required/>
             </p>
             
             <p>
-                <label for="nom">Nom</label> : <input type="text" name="nom" id="nom" placeholder="Votre nom..." required />
+                <label for="nom">Nom :</label><input type="text" name="nom" id="nom" placeholder="Votre nom..." required />
             </p>
             
             <p>
-                <label for="ville">Ville</label> : <input type="text" name="ville" id="ville" placeholder="Votre adresse..."  required />
+                <label for="ville">Ville :</label><input type="text" name="ville" id="ville" placeholder="Votre adresse..."  required />
             </p>
             
             <p>
-                <label for="mail">Mail</label> : <input type="email" name="mail" id="mail" placeholder="Votre email..." required />
+                <label for="mail">Mail :</label><input type="email" name="mail" id="mail" placeholder="Votre email..." required />
             </p>
             
             <p>
-                <label for="tel">TÃ©lÃ©phone</label> : <input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone..."  required />
+                <label for="tel">TÃ©lÃ©phone :</label><input type="tel" name="tel" id="tel" placeholder="Votre numéro de téléphone..."  required />
             </p>
             
             <p>
-                <label for="age">Age</label> : <input type="number" name="age" id="age" placeholder="Votre âge..." required />
+                <label for="identifiant">Identifiant :</label><input type="text" name="identifiant" id="identifiant" placeholder="Choisissez un identifiant..." required>
             </p>
             
             <p>
-                <label for="langue"></label>Langue  : <input type="text" name="langue" id="langue"/> <input type="button" onclick="ajout(element);" value="+"/>
-            </p>
-            
-            <p>
-                <label for="presentation">Une phrase de prÃ©sentation</label> : <textarea name="presentation" id="presentation"required ></textarea>
+                <label for="mdp">Mot de passe :</label><input type="password" name="mdp" id="mdp" placeholder="Choisissez un mot de passe..." required>
             </p>
             
             <p>
                 <input type="submit" value="Envoyer" />
             </p>   
-              
-                        
-        </form> 
+        
         </div>
+        </form> 
+            
+        <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+        
+        <script src="retourhaut.js"></script>
+        
         
     </body>
 </html>
